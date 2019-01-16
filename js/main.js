@@ -18,6 +18,7 @@ let bread = prompt("Please enter the kind of bread you wish to add to your sandw
 
 let meats = prompt("Please enter the meat you wish to add to your sandwich. If you choose more than one meat, separate each with a comma: chicken, turkey, ham.");
 
+
 // TODO: Prompt the user for what kind of toppings they would like.
 // We expect this to be multiple, so ask them to provide you with a
 // comma-separated list using a user friendly prompt.
