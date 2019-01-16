@@ -29,6 +29,7 @@ let toppings = prompt("Please enter a list of toppings in a comma separated list
 // Again, we should expect a comma-separated list if items here.
 
 
+let condiments = prompt("Please enter a list of condiments in a comma separated list");
 
 // Step Two ////////////////////////////////////////////////////////////
 //
@@ -46,9 +47,9 @@ let prices = {
 
 // TODO: Convert order information from Strings to Arrays.
 
-let meatArray = null;
-let toppingArray = null;
-let condimentArray = null;
+let meatArray = meats.split(",");
+let toppingArray = toppings.split(",");
+let condimentArray = condiments.split(",");
 
 // TODO: Calculate cost for meat, toppings, and condiments.
 // This requires you to determine the length of each Array you just made
