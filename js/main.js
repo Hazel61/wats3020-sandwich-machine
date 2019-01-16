@@ -10,19 +10,19 @@
 // TODO: Prompt the user for what kind of bread they would like.
 // Ideally, that would look something like: "What kind of bread (white, wheat, flat)?"
 
-
+let bread = prompt("Please enter the kind of bread you wish to add to your sandwich. Options are white, wheat, rye, and flat)");
 
 // TODO: Prompt the user for what kind of meat(s) they would like.
 // Indicate they should separate multiple items with a comma:
 // "What kind of meat? (Separate meats with a comma if you would like more than one.)"
 
-
+let meats = prompt("Please enter the meat you wish to add to your sandwich. If you choose more than one meat, separate each with a comma: chicken, turkey, ham.");
 
 // TODO: Prompt the user for what kind of toppings they would like.
 // We expect this to be multiple, so ask them to provide you with a
 // comma-separated list using a user friendly prompt.
 
-
+let toppings = prompt("Please enter a list of toppings in a comma separated list");
 
 // TODO: Prompt the user for what kind of condiments they would like.
 // Again, we should expect a comma-separated list if items here.
