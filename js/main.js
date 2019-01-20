@@ -7,10 +7,10 @@
 // Provide examples where it may help (e.g. show a comma-separated list of
 // toppings to indicate how to specify toppings, etc.)
 //
-let bread = prompt("Please enter the kind of bread you wish to add to your sandwich. Options are white, wheat, rye, and flat)");
-let meats = prompt("Please enter the meat you wish to add to your sandwich. If you choose more than one meat, separate each with a comma: chicken, turkey, ham.");
-let toppings = prompt("Please enter a list of toppings in a comma separated list");
-let condiments = prompt("Please enter a list of condiments in a comma separated list");
+let bread = prompt("Please enter the kind of bread you wish to add to your sandwich. Options are white, wheat, rye, and flat)", "rye");
+let meats = prompt("Please enter the meat you wish to add to your sandwich. If you choose more than one meat, separate each with a comma: chicken, turkey, ham.", "chicken, bacon");
+let toppings = prompt("Please enter a list of toppings in a comma separated list", "tomato, avocado");
+let condiments = prompt("Please enter a list of condiments in a comma separated list", "mayo, relish");
 
 // Step Two ////////////////////////////////////////////////////////////
 //
@@ -66,15 +66,15 @@ let receiptTemplate = `
     <p>Toppings: ${toppingArray}</p>
     <p>Condiments: ${condimentArray}</p>
     <p>---------------------</p>
-    <p class="text-right">Sandwich: ${sandwichCost} </p>
-    <p class="text-right">Meat: ${meatCost}</p>
-    <p class="text-right">Toppings: ${toppingCost}</p>
-    <p class="text-right">Condiments: ${condimentCost}</p>
+    <p class="text-right">Sandwich: $${sandwichCost.toFixed(2)} </p>
+    <p class="text-right">Meat: $${meatCost.toFixed(2)}</p>
+    <p class="text-right">Toppings: $${toppingCost.toFixed(2)}</p>
+    <p class="text-right">Condiments: $${condimentCost.toFixed(2)}</p>
     <p class="text-right">--------</p>
-    <p class="text-right">Subtotal: ${subtotal}</p>
-    <p class="text-right">Tax: ${orderTax}</p>
+    <p class="text-right">Subtotal: $${subtotal.toFixed(2)}</p>
+    <p class="text-right">Tax: $${orderTax.toFixed(2)}</p>
     <p class="text-right">--------</p>
-    <p class="text-right">Total: ${totalPrice}</p>
+    <p class="text-right">Total: $${totalPrice.toFixed(2)}</p>
 `
 
 ///////////////////////////////////////////////////////////////////////
